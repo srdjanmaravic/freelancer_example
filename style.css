@@ -66,6 +66,20 @@ aside {
   padding-right: 60px;
 }
 
+@media (max-width: 768px) {
+  aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 0;
+    text-align: center;
+    height: 80vh;
+  }
+}
+
 aside img {
   width: 40%;
   border-radius: 50%;
@@ -104,6 +118,15 @@ aside a:hover {
   padding: 40px;
   overflow: scroll;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .main {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    height: auto;
+  }
 }
 
 .main .about button {
@@ -149,6 +172,14 @@ aside a:hover {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 768px) {
+  .main .portfolio .row .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .main .portfolio .row .col img {
@@ -212,6 +243,8 @@ aside a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main footer .row form {
@@ -226,6 +259,14 @@ aside a:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .main footer .row form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .main footer .row form input {
@@ -278,6 +319,15 @@ aside a:hover {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 28%;
           flex: 0 0 28%;
+}
+
+@media (max-width: 768px) {
+  .main footer .row .contact {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 50px;
+  }
 }
 
 .main footer .row .contact li {
